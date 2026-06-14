@@ -37,6 +37,10 @@
 
 					highest = arr[index]
 				}
+				else if((arr[index] > secondHighest) && (arr[index]!== highest)){
+					secondHighest = arr[index]
+				}
+						
 			}
 			return secondHighest
 		}
@@ -45,11 +49,12 @@
 			
 			var n = prompt("Enter the number of elements");
 	
-			var arr = [];
+			var arr  = [];
 			for (var i = 0; i < n; i++) {
 				arr[i] = prompt("Enter element " + (i+1));
 			}
 			alert(secondHighest(arr));
+
 			
 		}
 		Main();
